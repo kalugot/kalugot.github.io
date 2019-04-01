@@ -1,0 +1,304 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
+html, body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  /* max-width: 100%; */
+}
+
+#headerImage, #about, #skills, #experience, #projects, #contact {
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.one {
+  width: 100%;
+  /* padding: 50px; */
+  margin-top: 50px;
+}
+
+/*For Introduction Name*/
+
+.typeWriter h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid black; */
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  /* margin: 0 auto; */
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  font-size: 34px;
+  text-align: justify;
+  padding-left: 10px;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typeWriter h2 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid black; */
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  /* margin: 0 auto; */
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  font-size: 30px;
+  text-align: justify;
+  padding-left: 10px;
+  /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black;
+    }
+} */
+
+.two {
+  width: 100%;
+  padding: 50px 50px 25px 50px;
+  color: black;
+}
+
+#about p {
+  font-size: 18px;
+  /* text-align: justify;
+    margin: 0 auto;
+    width: 30em; */
+}
+
+/* .center-justified {
+    text-align: justify;
+    margin: 0 auto;
+    width: 30em;
+} */
+
+.three {
+  width: 100%;
+  padding: 0px 50px 25px 50px;
+}
+
+.four {
+    width: 100%;
+    /* padding: 50px; */
+    padding: 50px 25px 50px 50px;
+}
+
+.five {
+  width: 100%;
+  /* padding: 50px; */
+  padding: 50px 25px 25px 50px;
+}
+
+.six {
+  width: 100%;
+  /* padding: 50px; */
+  padding: 50px 25px 25px 50px;
+}
+
+/* #carouselExampleIndicators {
+    border: 5px solid gray;
+} */
+
+/* .hobbyContainer{
+    overflow: hidden;
+} */
+
+.hobbyContainer img {
+  /* border: 1px solid black; */
+  padding: 5px;
+  transition: transform 0.5s ease;
+}
+
+.hobbyContainer:hover img {
+  transform: scale(1.5);
+}
+
+.displayHobby {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  /* #image1 {
+        height: 500px;
+    }
+
+    #image2 {
+        height: 500px;
+    } */
+  #headerImage {
+    height: 500px;
+  }
+
+  .aboutText p {
+    font-size: 16px !important;
+    text-align: justify !important;
+  }
+}
+
+@media (min-width: 881px) and (max-width: 991px){
+  .four{
+    width: 100%;
+  }
+  .ExpText.expImgTitle{
+    font-size: 26px;
+  }
+
+  .ExpText p{
+    font-size: 18px;
+  }
+
+  .ExpText li{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 881px) {
+  .ExpText.expImgTitle {
+    font-size: 24px;
+  }
+
+  .ExpText p {
+    font-size: 16px;
+  }
+
+  .ExpText li {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px){
+  .ExpText.expImgTitle {
+    font-size: 18px;
+  }
+
+  .ExpText p {
+    font-size: 12px;
+  }
+
+  .ExpText li {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 727px) {
+  .typeWriter h1 {
+    visibility: hidden;
+  }
+
+  .typeWriter h2 {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 575px) {
+  .expRow img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .projectRow img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px){
+  .expRow li {
+    font-size: 16px;
+  }
+
+  .projectRow li {
+    font-size: 16px;
+  }
+}
+
+/* @media (min-width: 1439px){
+    #headerImage,
+    #about,
+    #skills,
+    #experience,
+    #projects,
+    #contact{
+        width: 100vw;
+        height: 100vh;
+    }
+} */
+
+/* @media screen and (min-width: 0px) and (max-width: 575px){
+    #skillSet{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    #skillSet {
+        display: -webkit-flex, -ms-flexbox;
+    }
+
+} */
+
+.skillSet{
+    align-items: center;
+    z-index: 1;
+    perspective: 1000;
+    transform-style: preserve-3d;
+}
+
+.skillSet p{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 55px;
+    font-weight: bold;
+}
+
+.skillSet img{
+    padding: 50px;
+    transition: all 1.0s linear;
+    /* align-content: center; */
+    /* align-items: center; */
+}
+
+.skillContainer img {
+    /* border: 1px solid black; */
+    padding: 5px;
+    transition: transform 1.0s ease;
+}
+
+.skillContainer:hover img {
+    /* transform: scale(1.5); */
+    transform: rotateY(180deg);
+}
+
+.displaySkill {
+    visibility: hidden;
+}
