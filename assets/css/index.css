@@ -302,3 +302,13 @@ html, body {
 .displaySkill {
     visibility: hidden;
 }
+
+.contactContainer img {
+  /* border: 1px solid black; */
+  padding: 5px;
+  transition: transform 0.5s ease;
+}
+
+.contactContainer:hover img {
+  transform: scale(1.5);
+}
