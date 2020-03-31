@@ -233,13 +233,13 @@ html, body {
   text-align: center;
 }
 
-.Mobiletext{
-  padding: 0px !important;
-}
-
 @media (max-width: 576px){
   .expRow img, .projectRow img{
-    /* width: 80%; */
+    width: 80%;
     padding-bottom: 20px;
+  }
+
+  .Mobiletext{
+    padding: 0px !important;
   }
 }
